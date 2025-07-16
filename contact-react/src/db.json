@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "khushi",
+      "email": "khushi@gmail.com",
+      "password": "123"
+    }
+  ],
+  "contact": [
+    {
+      "id": "f98d",
+      "name": "khushi",
+      "number": "9913127651",
+      "city": "surat"
+    },
+    {
+      "id": "9a9a",
+      "name": "khushi",
+      "number": "9913127651",
+      "city": "surat",
+      "userId": "1"
+    }
+  ]
+}

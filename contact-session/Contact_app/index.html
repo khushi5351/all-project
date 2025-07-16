@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- <style>
+       body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+       #main{
+        background-color: white;
+        height: 70%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+       }
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+
+.d2 {
+    height: 80%;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    width: 50%;
+}
+
+.d2 h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+table {
+    width: 95%;
+}
+
+td {
+    padding: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b582d;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+    background-color: #da190b;
+}
+
+a {
+    display: inline-block;
+    /* margin-top: 5px; */
+    color: #007bff;
+    text-decoration: none;
+    text-align: left;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #c3ecf5, #a9d6f7);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Login Form Container */
+        #d2 {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 10px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            backdrop-filter: blur(8px);
+        }
+
+        /* Unique H1 Style */
+        #log_form h1 {
+
+            text-align: center;
+            color: #006666;
+            font-size: 26px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #e0f7f4;
+            padding-bottom: 10px;
+
+        }
+
+        /* Form Table & Label */
+        #log_form table {
+            width: 100%;
+        }
+
+        /* #log_form label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            width: 39%;
+        } */
+
+        /* Inputs */
+        #log_form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        #log_form input:focus {
+            border-color: #00c6ff;
+            box-shadow: 0 0 6px rgba(0, 198, 255, 0.5);
+            outline: none;
+        }
+
+        /* Buttons */
+        #log_form button {
+            padding: 10px 20px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #log_form button[type="reset"] {
+            background-color: #ef5350;
+        }
+
+        #log_form button:hover {
+            background-color: #0d47a1;
+        }
+
+        #log_form button[type="reset"]:hover {
+            background-color: #c62828;
+        }
+
+        /* Link */
+        #log_form a {
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            margin-top: 15px;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        #log_form a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        /* @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+   #log_form table {
+    width: 100%;
+    border-spacing: 0 8px; /* space between rows */
+}
+
+#log_form td {
+    padding: 4px;
+    vertical-align: middle;
+}
+
+#log_form label {
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    width: 50px; /* controls label width */
+    margin-right: 10px;
+}
+
+#log_form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#btn td {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#btn_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="d2">
+            <form id="log_form">
+                <h1>Login</h1>
+                <table>
+                    <tr>
+                        <td><label for="email">E-mail</label></td>
+                        <td><input type="email" id="email" placeholder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" placeholder="Enter password"></td>
+                    </tr>
+                    <tr id="btn">
+                        <td colspan="2">
+                            <div id="btn_wrapper">
+                                <button type="submit">Login</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <a href="register.html">Sign Up.</a>
+                        </td>
+                    </tr>
+                </table>
+
+
+            </form>
+        </div>
+        <!-- <div id="d1">
+            <img src="https://st2.depositphotos.com/1001599/43046/v/450/depositphotos_430460192-stock-illustration-sign-page-abstract-concept-vector.jpg" alt="">
+        </div> -->
+    </div>
+    <script type="module" src="js/user_op.js"></script>
+</body>
+
+</html>

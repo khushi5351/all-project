@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <style>
+        /* Full page background */
+body {
+  background-color: #0d0d0d; /* very dark charcoal */
+  margin: 0;
+  padding: 0;
+  color: #ccc; /* light gray for text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(90deg, #1a1a1a, #121212);
+  padding: 16px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.85);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar right links */
+.navbar-right a {
+  color: #d0d0d0;
+  text-decoration: none;
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.15s ease;
+  user-select: none;
+}
+
+/* Hover effect with slight scaling */
+.navbar-right a:hover {
+  background-color: #2e2e2e;
+  color: #66ccff;
+  border-color: #66ccff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Active or focus effect */
+.navbar-right a:focus {
+  outline: none;
+  box-shadow: 0 0 8px #66ccff;
+}
+
+
+/* Contact table styles */
+#contact-table {
+  width: 90%;
+  margin: 25px auto;
+  border-collapse: collapse;
+  background-color: #121212; /* very dark blackish gray */
+  color: #dcdcdc;
+  box-shadow: 0 0 18px rgba(102, 204, 255, 0.3); /* soft blue glow */
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Table header */
+#contact-table th {
+  background-color: #222222; /* charcoal */
+  color: #66ccff; /* cool blue accent */
+  font-weight: 700;
+  padding: 14px 20px;
+  border-bottom: 3px solid #66ccff;
+  text-align: left;
+}
+
+/* Table cells */
+#contact-table td {
+  padding: 15px 20px;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+/* Zebra striping */
+#contact-table tr:nth-child(even) {
+  background-color: #1c1c1c; /* graphite shade */
+}
+
+/* Row hover effect */
+#contact-table tr:hover {
+  background-color: #333333; /* dark slate gray */
+  cursor: pointer;
+}
+h1 {
+  color: #66ccff; /* same cool blue accent */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 30px 0 15px 0;
+  text-shadow: 0 0 6px rgba(102, 204, 255, 0.7);
+  user-select: none;
+}
+
+
+    </style> -->
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f7f8;
+  padding: 40px 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #008080;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.navbar-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 30px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-right a:hover {
+  color: #c8f7f0;
+}
+
+  
+
+#contact-table {
+  width: 90%;
+  margin: 40px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+#contact-table th {
+  background-color: #008080;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+#contact-table td {
+  padding: 12px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+#contact-table tr:hover td {
+  background-color: #f0fdfc;
+}
+h1 {
+  text-align: center;
+  color: #008080;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0, 128, 128, 0.2);
+}
+
+
+</style>
+</head>
+<body>
+     <div class="navbar">
+    <!-- <div class="navbar-left">
+        <span>Contact Us</span>
+    </div> -->
+    <div class="navbar-right">
+        <a href="home.html" id="show">Add Contact</a>
+        <a href="#" id="logout">Logout</a>
+    </div>
+</div>
+<h1>contact Details</h1>
+     <table id="contact-table" style="border: 2px solid black;border-collapse: collapse;"></table>
+        <script type="module" src="./js/contact_script.js"></script>
+        <!-- <script type="module" src="./js/user_op.js"></script> -->
+</body>
+</html>

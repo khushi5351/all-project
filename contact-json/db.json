@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "khushi",
+      "email": "khushi@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "94b5",
+      "name": "yash",
+      "email": "yash@gmail.com",
+      "password": "123"
+    }
+  ],
+  "contact": [
+    {
+      "id": "5b79",
+      "name": "yash",
+      "mobile": "09913127654",
+      "city": "surat"
+    },
+    {
+      "id": "d4b1",
+      "name": "khushi patel",
+      "mobile": "9187654320",
+      "city": "surat"
+    },
+    {
+      "id": "3d3c",
+      "name": "parik",
+      "mobile": "09913127654",
+      "city": "surat"
+    },
+    {
+      "id": "16b3",
+      "name": "khushi",
+      "mobile": "09913127654",
+      "city": "surat"
+    }
+  ]
+}

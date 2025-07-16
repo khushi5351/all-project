@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdf9f8;
+  color: #333;
+}
+
+/* ========== NAVBAR ========== */
+
+.navbar {
+  background-color: #fdf2ec;
+  padding: 16px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  color: #2c3e50;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover:not(.logout-btn) {
+  background-color: #f5dad4;
+  color: #000;
+}
+
+/* Logout button with elegant style */
+.logout-btn {
+  background: linear-gradient(to right, #f59a9a, #ec6f66);
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(236, 111, 102, 0.25);
+}
+
+.logout-btn:hover {
+  background: #ec6f66;
+  box-shadow: 0 6px 16px rgba(236, 111, 102, 0.3);
+  transform: scale(1.03);
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+    width: 100%;
+  }
+}

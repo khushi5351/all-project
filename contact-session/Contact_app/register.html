@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <!-- <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #main {
+            background-color: white;
+            height: 70%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        img {
+            height: 300px;
+            width: 300px;
+        }
+
+        .d2 {
+            height: 90%;
+            background-color: #ffffff;
+            padding: 20px 30px;
+            width: 50%;
+        }
+
+        .d2 h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px 0;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2b582d;
+        }
+
+        button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #da190b;
+        }
+
+        a {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            text-align: left;
+            width: 100%;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style> -->
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.d2 {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+#reg_form h1 {
+  text-align: center;
+  color: #006666;
+  font-size: 26px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e0f7f4;
+  padding-bottom: 10px;
+}
+
+/* Animation */
+
+
+
+#reg_form table {
+    width: 100%;
+}
+
+#reg_form label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 8px;
+    /* width: 50px; */
+}
+
+#reg_form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+#reg_form input:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 5px rgba(25, 118, 210, 0.5);
+    outline: none;
+}
+
+#reg_form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #1976d2;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#reg_form button[type="reset"] {
+    background-color: #ef5350;
+}
+
+#reg_form button:hover {
+    background-color: #1565c0;
+}
+
+#reg_form button[type="reset"]:hover {
+    background-color: #c62828;
+}
+
+#reg_form a {
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#reg_form a:hover {
+    text-decoration: underline;
+}
+
+#btn td {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#btn_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <!-- <div class="d1">
+            <img src="https://img.freepik.com/free-vector/profile-interface-concept-illustration_114360-2850.jpg?semt=ais_items_boosted&w=740"
+                alt="">
+        </div> -->
+        <div class="d2">
+            <form id="reg_form">
+                <h1>Register</h1>
+                <table>
+                    <tr>
+                        <td><label for="">Name</label></td>
+                        <td><input type="text" placeholder="enter Name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">E-mail</label></td>
+                        <td><input type="email" placeholder="enter email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">password</label></td>
+                        <td><input type="password" placeholder="enter password" id="password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Confirm password</label></td>
+                        <td><input type="password" placeholder="Re-type password" id="retype_pass"></td>
+                    </tr>
+                    <tr id="btn">
+                        <td colspan="2">
+                            <div id="btn_wrapper">
+                                <button type="submit">Register</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <a href="index.html">Sign Up.</a>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+        </form>
+    </div>
+    <script type="module" src="js/user_op.js"></script>
+
+
+</body>
+
+</html>
