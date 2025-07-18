@@ -8,10 +8,7 @@ body {
   background: #f6f8fa;
   color: #222;
 }
-a {
-  text-decoration: none;
-  color: #222;
-}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -29,6 +26,8 @@ a {
   color: #2d2d2d;
 }
 nav a {
+  text-decoration: none;
+  color: #222;
   margin: 0 10px;
   font-weight: 500;
 }
@@ -194,6 +193,42 @@ nav a {
   font-size: 1.2rem;
   cursor: pointer;
 }
-.footer-copy {
-  margin-top:
+/* Existing styles kept as-is */
+.hidden {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 426px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .search {
+    order: 3;
+    width: 32%;
+    margin: 10px 0;
+  }
+
+ #nav-links a{
+  font-size: small;
+ }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .icons {
+    order: 4;
+    width: 54%;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
 }

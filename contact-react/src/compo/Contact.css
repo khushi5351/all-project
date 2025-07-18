@@ -1,10 +1,12 @@
 .add-contact-container {
   max-width: 500px;
+  width: 90%;
   margin: 40px auto;
   background-color: #fff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 
 .add-contact-container h2 {
@@ -38,6 +40,7 @@
   background-color: #fdf9f9;
   transition: border-color 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form input:focus {
@@ -46,7 +49,6 @@
   background-color: #fff;
 }
 
-/* Form Button */
 .contact-form button {
   width: 100%;
   padding: 12px;
@@ -63,4 +65,29 @@
 
 .contact-form button:hover {
   background-color: #e05a55;
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 426px) {
+  .add-contact-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .add-contact-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-form label {
+    font-size: 0.9rem;
+  }
+
+  .contact-form input {
+    font-size: 13px;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
 }

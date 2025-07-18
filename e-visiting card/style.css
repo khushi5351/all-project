@@ -174,7 +174,7 @@ footer {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 426px) {
   header h1 {
     font-size: 1.8rem;
   }
@@ -183,9 +183,17 @@ footer {
   }
   .card-1,
   .card-2 {
-    width: 90%;
+    width: 77%;
     padding: 20px;
   }
+
+  .contact p{
+    font-size: small;
+  }
+  .about p{
+    font-size: small;
+  }
+ 
   .social a {
     font-size: 22px;
   }

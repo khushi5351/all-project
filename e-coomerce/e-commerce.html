@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechSpace Store</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">TechSpace</div>
     <input type="text" placeholder="Search gadgets..." class="search" />
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+
+
+    <nav id="nav-links">
+      <a href="#home">Home</a>
+      <a href="#product">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
+
     <div class="icons">
       <i class="fas fa-shopping-cart"></i>
       <button class="btn">Login</button>
     </div>
   </header>
 
-  <section class="hero">
+
+  <section class="hero" id="home">
     <h1>Tech That Moves With You</h1>
     <p>Explore the latest gadgets built for performance and style.</p>
     <button class="btn">Shop Now</button>
   </section>
 
-  <section class="products">
+  <section class="products" id="product">
     <h2>Featured Products</h2>
     <div class="product-grid">
       <div class="card">
@@ -40,7 +46,8 @@
         <button class="btn">Add to Cart</button>
       </div>
       <div class="card">
-        <img src="https://suprememobiles.in/cdn/shop/files/TemptSINQWithMicBluetoothSpeaker-Pink.png?v=1723270623" alt="Bluetooth Speaker" />
+        <img src="https://suprememobiles.in/cdn/shop/files/TemptSINQWithMicBluetoothSpeaker-Pink.png?v=1723270623"
+          alt="Bluetooth Speaker" />
         <h3>Bluetooth Speaker</h3>
         <p>₹1,999</p>
         <button class="btn">Add to Cart</button>
@@ -52,7 +59,8 @@
         <button class="btn">Add to Cart</button>
       </div>
       <div class="card">
-        <img src="https://decawall.in/cdn/shop/files/360_rotating_phone_stand_with_adjustable_height.jpg?v=1736665155" alt="Phone Stand" />
+        <img src="https://decawall.in/cdn/shop/files/360_rotating_phone_stand_with_adjustable_height.jpg?v=1736665155"
+          alt="Phone Stand" />
         <h3>Phone Stand</h3>
         <p>₹499</p>
         <button class="btn">Add to Cart</button>
@@ -61,18 +69,20 @@
   </section>
 
   <!-- about page -->
-   <section class="about-section">
+  <section class="about-section" id="about">
     <div class="about-container">
       <h1>About TechSpace</h1>
       <p>
-        TechSpace is an online store built for tech lovers. We deliver stylish, functional, and affordable accessories for your everyday tech life.
+        TechSpace is an online store built for tech lovers. We deliver stylish, functional, and affordable accessories
+        for your everyday tech life.
       </p>
       <h2>Our Mission</h2>
       <p>To make quality tech accessories accessible and fashionable for everyone.</p>
 
       <h2>Our Story</h2>
       <p>
-        Founded in 2025, we started with a simple idea — make tech stylish and useful. From mobile accessories to smart gadgets, our goal is to keep you connected in style.
+        Founded in 2025, we started with a simple idea — make tech stylish and useful. From mobile accessories to smart
+        gadgets, our goal is to keep you connected in style.
       </p>
 
       <h2>Meet the Team</h2>
@@ -85,7 +95,7 @@
   </section>
 
   <!-- contact page -->
-  <section class="contact-section">
+  <section class="contact-section" id="contact">
     <div class="contact-container">
       <h1>Get in Touch</h1>
       <p>We’re here to help. Reach out to us anytime, and we’ll get back to you as soon as we can.</p>
@@ -143,4 +153,5 @@
     <p class="footer-copy">© 2025 TechSpace. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
